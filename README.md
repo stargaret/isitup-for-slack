@@ -1,3 +1,10 @@
+### Note
+This is a fork of mccreath/isitup-for-slack. I modified this to be deployed easily on Heroku. I removed the hardcoded token to grab from Heroku environment variable (SLACK_SLASH_TOKEN). That way you can test against your own team's configured slash command token. You will need to need to set the variable like so:
+
+```bash
+heroku config:set SLACK_SLASH_TOKEN=[your_team_config_token]
+```
+
 # isitup-for-slack
 
 Custom slash command to use isitup.org to check if a site is up from within Slack
